@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'cz.cvut.fit.niccc'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'org.json:json:20230618'
+}
+
+jar {
+    manifest {
+        attributes 'Main-class' : 'cz.cvut.fit.niccc.Main'
+    }
+
+    /*from {
+        configurations.runtimeClasspath.collect {it.isDirectory() ? ut : zipTree(it)}
+    }*/
+}
+test {
+    useJUnitPlatform()
+}
