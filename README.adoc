@@ -1,0 +1,5 @@
+= Dalnic-e
+
+* projekt předmětu NI-CCC v zimním semestru 2023
+
+http://ni-ccc.github.io[ni-ccc.github.io]
